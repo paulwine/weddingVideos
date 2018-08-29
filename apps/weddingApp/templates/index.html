@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div id="wrapper">
+    <h1>Wedding Site Main Page</h1>
+    <div id="navbar">
+        <a class="navitem"href="/">Home</a>
+        <a class="navitem"href="/about">About</a>
+        <a class="navitem"href="/portfolio">Portfolio</a>
+        <a class="navitem"href="/info">Info/Pricing Estimates</a>
+        <a class="navitem"href="/contact">Contact</a>
+    </div>
+    <h2>Remembering the important things in life can be hard for your brain.  Let us remember for you.</h2>
+    <div id="image_box">
+        <img src="{% static 'img/basicwedding.jpg'%}" class = 'singleimg'alt="">
+        <img src="{% static 'img/bodypillow1.jpg'%}" class = 'singleimg'alt="">
+        <img src="{% static 'img/bodypillow2.jpeg'%}" class = 'singleimg'alt="">
+    </div>
+</div>
+</body>
+</html>
